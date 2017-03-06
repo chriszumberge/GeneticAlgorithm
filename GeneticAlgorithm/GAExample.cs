@@ -15,7 +15,7 @@ using System.Linq;
 
 namespace GeneticAlgorithm
 {
-    public class GeneticAlgorithm
+    public class GAExample
     {
         // holds the entire population of genomes
         List<Genome> mPopulation { get; set; }
@@ -41,7 +41,7 @@ namespace GeneticAlgorithm
 
         Random mRandom { get; set; }
 
-        public GeneticAlgorithm(Random random, int popSize, double mutRate, double crossRate, int numWeights)
+        public GAExample(Random random, int popSize, double mutRate, double crossRate, int numWeights)
         {
             mPopSize = popSize;
             mMutationRate = mutRate;
@@ -263,20 +263,20 @@ namespace GeneticAlgorithm
         {
             return mBestFitness;
         }
-    }
 
-    public class Genome
-    {
-        public List<double> weights = new List<double>();
-
-        public double fitness = 0;
-
-        public Genome() { }
-
-        public Genome(List<double> wgts, double ftns)
+        public class Genome
         {
-            weights = wgts;
-            fitness = ftns;
+            public List<double> weights = new List<double>();
+
+            public double fitness = 0;
+
+            public Genome() { }
+
+            public Genome(List<double> wgts, double ftns)
+            {
+                weights = wgts;
+                fitness = ftns;
+            }
         }
     }
 }
