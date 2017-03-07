@@ -10,7 +10,7 @@
 // All rights reserved
 //
 using System;
-namespace GeneticAlgorithm
+namespace GeneticAlgorithm.Examples
 {
     public static class Params
     {

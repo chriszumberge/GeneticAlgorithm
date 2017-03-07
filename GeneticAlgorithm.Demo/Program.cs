@@ -9,6 +9,7 @@
 //
 // All rights reserved
 //
+using GeneticAlgorithm.Examples;
 using System;
 using System.Collections.Generic;
 using System.Linq;
